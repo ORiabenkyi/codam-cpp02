@@ -8,7 +8,7 @@ Fixed area(const Point& a, const Point& b) {
 bool bsp( Point const a, Point const b, Point const c, Point const point ) {
     Fixed areaAB = area(a - b, point- b);
     Fixed areaAC = area(a - c, point - c);
-    Fixed areaBC = area(b - c, point - c);
+    Fixed areaBC = area(c - b, point - b);
 
     return !(areaAB > 0 && areaAC > 0 && areaBC > 0) && (areaAB < 0 && areaAC < 0 && areaBC < 0);
     
