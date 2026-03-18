@@ -1,13 +1,15 @@
-NAME = ex00
+NAME = ex01
 CC   = c++
 CCFLAG = -Wall -Wextra -Werror -std=c++98
 
-SRCS = 	src/newZombie.cpp \
-		src/randomChump.cpp \
-		src/Zombie.cpp  \
+SRCS = 	src/Fixed.cpp \
+		src/Point.cpp \
+		src/bsp.cpp \
 		src/main.cpp
 
-HEADS =  include/Zombie.hpp		
+HEADS =  inc/Fixed.hpp
+HEADS += inc/Point.hpp
+	
 
 OBJS = $(SRCS:.cpp=.o)
 
