@@ -14,13 +14,14 @@ class Fixed {
     Fixed(float const raw);
     ~Fixed();
     Fixed(const Fixed &otherFixed);
-    Fixed& operator=(const Fixed &otherFixed);
 
     public:
     int getRawBits() const;
     void setRawBits(int const raw);
     float toFloat() const;
     int toInt() const;
+    Fixed& operator=(const Fixed &otherFixed);
+    friend std::ostream& operator<<(std::ostream& out, const Fixed& fp);
 
 };
 
