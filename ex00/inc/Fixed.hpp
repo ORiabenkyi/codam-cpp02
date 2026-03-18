@@ -1,0 +1,23 @@
+
+#ifndef FIXED_HPP
+#define FIXED_HPP
+#include <string>  
+
+class Fixed {
+   private:
+    int value;
+    static const int storedBits = 8;
+
+   public:
+    Fixed();
+    ~Fixed();
+    Fixed(const Fixed &otherFixed);
+    Fixed& operator=(const Fixed &otherFixed);
+
+    public:
+    int getRawBits() const;
+    void setRawBits(int const raw);
+
+};
+
+#endif
