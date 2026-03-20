@@ -10,42 +10,46 @@ int main( void )
         Point b(5, 0);
         Point c(0, 5);
 
-        Point point(1, 1);
+        std::cout << "The triangle is defined by points " << a << ", " << b << ", and " << c << "." << std::endl;
 
-        if (bsp(a, b, c, point)) {
-            std::cout << "The point is inside the triangle." << std::endl;
+        Point pointIn01(1, 1);
+        Point pointIn02(4, 4);
+        Point pointIn03(2, 3);
+        Point pointIn04(3, 2);
+        Point pointIn05(5, 5);
+        Point pointIn06(0, 0);
+
+        if (bsp(a, b, c, pointIn01)) {
+            std::cout << "The point " << pointIn01 << " is inside the triangle." << std::endl;
         } else {
-            std::cout << "The point is outside the triangle." << std::endl;
+            std::cout << "The point " << pointIn01 << " is outside the triangle." << std::endl;
+        }
+        if (bsp(a, b, c, pointIn02)) {
+            std::cout << "The point " << pointIn02 << " is inside the triangle." << std::endl;
+        } else {
+            std::cout << "The point " << pointIn02 << " is outside the triangle." << std::endl;
+        }
+        if (bsp(a, b, c, pointIn03)) {
+            std::cout << "The point " << pointIn03 << " is inside the triangle." << std::endl;
+        } else {
+            std::cout << "The point " << pointIn03 << " is outside the triangle." << std::endl;
+        }
+        if (bsp(a, b, c, pointIn04)) {
+            std::cout << "The point " << pointIn04 << " is inside the triangle." << std::endl;
+        } else {
+            std::cout << "The point " << pointIn04 << " is outside the triangle." << std::endl;
+        }
+        if (bsp(a, b, c, pointIn05)) {
+            std::cout << "The point " << pointIn05 << " is inside the triangle." << std::endl;
+        } else {
+            std::cout << "The point " << pointIn05 << " is outside the triangle." << std::endl;
+        }
+        if (bsp(a, b, c, pointIn06)) {
+            std::cout << "The point " << pointIn06 << " is inside the triangle." << std::endl;
+        } else {
+            std::cout << "The point " << pointIn06 << " is outside the triangle." << std::endl;
         }
     }
-    
-    {
-        Point a(0, 0);
-        Point b(10, 0);
-        Point c(0, 10);
 
-        Point point(1, 1);
-
-        if (bsp(a, b, c, point)) {
-            std::cout << "The point is inside the triangle." << std::endl;
-        } else {
-            std::cout << "The point is outside the triangle." << std::endl;
-        }
-    }
-    {
-        Point a;
-        Point b(10, 0);
-        Point c(0, 10);
-
-        Point point(-5, -5);
-
-        if (bsp(a, b, c, point)) {
-            std::cout << "The point is inside the triangle." << std::endl;
-        } else {
-            std::cout << "The point is outside the triangle." << std::endl;
-        }
-    }    
-    
-    
     return 0;
 }

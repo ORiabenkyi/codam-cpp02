@@ -36,3 +36,8 @@ Fixed Point::getX() const {
 Fixed Point::getY() const {
     return this->y;
 }
+
+std::ostream& operator<<(std::ostream& out, const Point& fp) {
+    out << " Point (" << fp.getX() << ", " << fp.getY() << ")";
+    return out;
+}
