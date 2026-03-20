@@ -1,7 +1,7 @@
 
 #include "../inc/Fixed.hpp"
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 Fixed::Fixed() : value(0) {
     // std::cout << "Fixed default constructor called" << std::endl;

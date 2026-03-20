@@ -18,8 +18,6 @@ class Point {
     Fixed getX() const;
     Fixed getY() const;
 
-    friend std::ostream& operator<<(std::ostream& out, const Point& fp);
-
 };
 
 #endif

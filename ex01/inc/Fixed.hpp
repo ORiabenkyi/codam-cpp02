@@ -21,8 +21,6 @@ class Fixed {
     float toFloat() const;
     int toInt() const;
     Fixed& operator=(const Fixed &otherFixed);
-    friend std::ostream& operator<<(std::ostream& out, const Fixed& fp);
-
 };
 
 #endif

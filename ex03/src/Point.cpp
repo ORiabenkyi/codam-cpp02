@@ -1,6 +1,8 @@
 #include "../inc/Point.hpp"
 #include <iostream>
 
+std::ostream& operator<<(std::ostream& out, const Fixed& fp);
+
 Point::Point() : x(0), y(0) {
     // std::cout << "Point default constructor called" << std::endl;
 }  

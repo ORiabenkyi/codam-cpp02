@@ -4,6 +4,9 @@
 bool bsp( Point const a, Point const b, Point const c, Point const point );
 bool bsp2( Point const a, Point const b, Point const c, Point const point );
 
+std::ostream& operator<<(std::ostream& out, const Fixed& fp);
+std::ostream& operator<<(std::ostream& out, const Point& fp);
+
 int main( void )
 {
     {
